@@ -37,6 +37,12 @@ export const LoginPage = () => {
             />
           </Grid2>
 
+          <Grid2 container direction='row' justifyContent='end' size={12} sx={{ mt: 2 }}>
+            <Link color='inherit'>
+              ¿Olvidaste tu contraseña?
+            </Link>
+          </Grid2>
+
           <Grid2 container spacing={2} sx={{ mb: 2, mt: 1 }} size={12} >
 
             <Grid2 size={{ xs: 12, sm: 6 }}>
@@ -63,8 +69,9 @@ export const LoginPage = () => {
           </Grid2>
           
           <Grid2 container direction='row' justifyContent='end' size={12}>
-            <Link component={ RouterLink } color='inherit' to="/auth/register">
-              Crear una cuenta
+            ¿No tienes cuenta?
+            <Link component={ RouterLink } color='inherit' to="/auth/register" sx={{ ml: 1}}>
+              Regístrate
             </Link>
           </Grid2>
 
